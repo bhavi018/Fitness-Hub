@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Fitness Management - Classes</title>
+    <style>
+        /* Custom animation for fade-in effect */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .fade-in {
+            animation: fadeIn 2s ease-out;
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center py-4 px-8 bg-red-600 sticky top-0 z-50">
+        <div class="text-2xl font-bold hover:text-red-300 transition duration-300">Fitness Studio</div>
+        <ul class="hidden md:flex space-x-6">
+            <li><a href="index.html" class="hover:text-red-300 transition duration-300">Home</a></li>
+            <li><a href="about.html" class="hover:text-red-300 transition duration-300">About</a></li>
+            <li><a href="classes.html" class="hover:text-red-300 transition duration-300">Classes</a></li>
+            <li><a href="contact.html" class="hover:text-red-300 transition duration-300">Contact</a></li>
+            <li><a href="login.html" class="hover:text-red-300 transition duration-300">Login</a></li>
+        </ul>
+        <button class="md:hidden text-white focus:outline-none" id="menu-toggle">
+            ☰
+        </button>
+    </nav>
+
+    <!-- Classes Section -->
+    <section class="p-8 md:p-16 fade-in">
+        <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">Our Classes</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- Zumba Class -->
+            <div class="bg-gray-800 p-6 rounded-lg hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                <img src="zumba.jpg" alt="Zumba Class" class="w-full h-48 object-cover rounded mb-4">
+                <h3 class="text-xl font-bold mb-2">Zumba</h3>
+                <p class="mb-4">Join our high-energy Zumba classes to dance your way to fitness. Perfect for all levels, these sessions combine cardio, muscle conditioning, and a serious dose of fun.</p>
+                <p class="font-semibold">Schedule: Mon, Wed, Fri - 6 PM to 7 PM</p>
+                <a href="#" class="block mt-4 bg-red-600 text-white py-2 px-4 rounded text-center hover:bg-red-700 transition duration-300">Join Now</a>
+            </div>
+
+            <!-- Cardio Class -->
+            <div class="bg-gray-800 p-6 rounded-lg hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                <img src="cardio.jpg" alt="Cardio Class" class="w-full h-48 object-cover rounded mb-4">
+                <h3 class="text-xl font-bold mb-2">Cardio Blast</h3>
+                <p class="mb-4">Boost your endurance and burn calories with our Cardio Blast classes. A mix of aerobics, HIIT, and bodyweight exercises designed to keep your heart pumping.</p>
+                <p class="font-semibold">Schedule: Tue, Thu - 7 AM to 8 AM</p>
+                <a href="#" class="block mt-4 bg-red-600 text-white py-2 px-4 rounded text-center hover:bg-red-700 transition duration-300">Join Now</a>
+            </div>
+
+            <!-- Pilates Class -->
+            <div class="bg-gray-800 p-6 rounded-lg hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                <img src="pilates.jpg" alt="Pilates Class" class="w-full h-48 object-cover rounded mb-4">
+                <h3 class="text-xl font-bold mb-2">Pilates</h3>
+                <p class="mb-4">Enhance your core strength and flexibility with Pilates. Suitable for all fitness levels, this low-impact exercise helps build lean muscle and improve posture.</p>
+                <p class="font-semibold">Schedule: Mon, Wed, Fri - 8 AM to 9 AM</p>
+                <a href="#" class="block mt-4 bg-red-600 text-white py-2 px-4 rounded text-center hover:bg-red-700 transition duration-300">Join Now</a>
+            </div>
+
+            <!-- Strength Training Class -->
+            <div class="bg-gray-800 p-6 rounded-lg hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                <img src="strength_training.jpg" alt="Strength Training Class" class="w-full h-48 object-cover rounded mb-4">
+                <h3 class="text-xl font-bold mb-2">Strength Training</h3>
+                <p class="mb-4">Build muscle and increase your strength with our comprehensive strength training sessions. These classes use free weights, resistance bands, and body weight exercises.</p>
+                <p class="font-semibold">Schedule: Tue, Thu - 6 PM to 7 PM</p>
+                <a href="#" class="block mt-4 bg-red-600 text-white py-2 px-4 rounded text-center hover:bg-red-700 transition duration-300">Join Now</a>
+            </div>
+
+            <!-- Yoga Class -->
+            <div class="bg-gray-800 p-6 rounded-lg hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                <img src="yoga.jpg" alt="Yoga Class" class="w-full h-48 object-cover rounded mb-4">
+                <h3 class="text-xl font-bold mb-2">Yoga</h3>
+                <p class="mb-4">Reconnect with your body and mind in our Yoga classes. Suitable for all levels, these sessions help you increase flexibility, balance, and mindfulness.</p>
+                <p class="font-semibold">Schedule: Mon, Wed, Fri - 7 AM to 8 AM</p>
+                <a href="#" class="block mt-4 bg-red-600 text-white py-2 px-4 rounded text-center hover:bg-red-700 transition duration-300">Join Now</a>
+            </div>
+
+            <!-- HIIT Class -->
+            <div class="bg-gray-800 p-6 rounded-lg hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                <img src="hiit.jpg" alt="HIIT Class" class="w-full h-48 object-cover rounded mb-4">
+                <h3 class="text-xl font-bold mb-2">HIIT</h3>
+                <p class="mb-4">High-Intensity Interval Training (HIIT) is the ultimate fat-burning workout. Short bursts of intense activity followed by rest periods will leave you feeling strong and energized.</p>
+                <p class="font-semibold">Schedule: Sat, Sun - 10 AM to 11 AM</p>
+                <a href="#" class="block mt-4 bg-red-600 text-white py-2 px-4 rounded text-center hover:bg-red-700 transition duration-300">Join Now</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-4">
+        <p class="text-center">&copy; 2024 Fitness Studio. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Menu Toggle -->
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+

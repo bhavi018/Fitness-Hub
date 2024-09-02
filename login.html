@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Fitness Studio - Sign In</title>
+</head>
+<body class="bg-black text-white flex items-center justify-center min-h-screen">
+
+    <!-- Login Box -->
+    <div class="bg-gray-800 p-8 rounded-lg shadow-lg w-full max-w-sm">
+        <h2 class="text-2xl font-bold mb-6 text-center text-red-600">Sign In to Your Account</h2>
+        
+        <!-- Login Form -->
+        <form id="loginForm">
+            <div class="mb-4">
+                <label class="block text-white text-sm font-bold mb-2" for="username">Username</label>
+                <input class="w-full p-2 border border-gray-600 rounded bg-gray-900 text-white focus:outline-none focus:ring-2 focus:ring-red-600" type="text" id="username" placeholder="Enter your username" required>
+            </div>
+            <div class="mb-6">
+                <label class="block text-white text-sm font-bold mb-2" for="password">Password</label>
+                <input class="w-full p-2 border border-gray-600 rounded bg-gray-900 text-white focus:outline-none focus:ring-2 focus:ring-red-600" type="password" id="password" placeholder="Enter your password" required>
+            </div>
+            <div class="flex items-center justify-between mb-4">
+                <button class="bg-red-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-red-600 hover:bg-red-700 transition duration-300" type="button" onclick="login()">Login</button>
+                <a href="#" class="text-sm text-red-500 hover:text-red-300 transition duration-300" onclick="showForgotPassword()">Forgot Password?</a>
+            </div>
+        </form>
+
+        <!-- Forgot Password Form (Initially Hidden) -->
+        <form id="forgotPasswordForm" class="hidden">
+            <div class="mb-4">
+                <label class="block text-white text-sm font-bold mb-2" for="forgotUsername">Username</label>
+                <input class="w-full p-2 border border-gray-600 rounded bg-gray-900 text-white focus:outline-none focus:ring-2 focus:ring-red-600" type="text" id="forgotUsername" placeholder="Enter your username" required>
+            </div>
+            <div class="mb-6">
+                <button class="bg-red-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-red-600 hover:bg-red-700 transition duration-300 w-full" type="button" onclick="resetPassword()">Reset Password</button>
+            </div>
+            <p class="text-center text-sm">Remember your password? <a href="#" class="text-red-500 hover:text-red-300 transition duration-300" onclick="showLogin()">Log in here</a></p>
+        </form>
+
+        <!-- Sign-up Form (Initially Hidden) -->
+        <form id="signupForm" class="hidden">
+            <div class="mb-4">
+                <label class="block text-white text-sm font-bold mb-2" for="newUsername">Username</label>
+                <input class="w-full p-2 border border-gray-600 rounded bg-gray-900 text-white focus:outline-none focus:ring-2 focus:ring-red-600" type="text" id="newUsername" placeholder="Choose a username" required>
+            </div>
+            <div class="mb-6">
+                <label class="block text-white text-sm font-bold mb-2" for="newPassword">Password</label>
+                <input class="w-full p-2 border border-gray-600 rounded bg-gray-900 text-white focus:outline-none focus:ring-2 focus:ring-red-600" type="password" id="newPassword" placeholder="Choose a password" required>
+            </div>
+            <button class="bg-red-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-red-600 hover:bg-red-700 transition duration-300 w-full" type="button" onclick="signup()">Sign Up</button>
+            <p class="text-center text-sm mt-4">Already have an account? <a href="#" class="text-red-500 hover:text-red-300 transition duration-300" onclick="showLogin()">Log in here</a></p>
+        </form>
+
+        <!-- Message Display Area -->
+        <p id="message" class="text-center text-sm mt-4"></p>
+    </div>
+
+    <!-- JavaScript for Form Handling -->
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
